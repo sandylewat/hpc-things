@@ -74,18 +74,17 @@ void main() {
         exit(1);
     }
 
-    fprintf(f, "sep=;\n");
-    fprintf(f, "Mode/n;Serial;");
+    fprintf(f, "Mode/n,Serial,");
 
     for(int i = 2; i <= max_thread; ++i) {
-        fprintf(f, "%d Thread;", i);
+        fprintf(f, "%d Thread,", i);
     }
     fprintf(f, "\n");
 
     for(int i = 0; i < ns_length; ++i) {
-        fprintf(f,"%lu;",ns[i]);
+        fprintf(f,"%lu,",ns[i]);
         for(int j = 0; j < max_thread; ++j) {
-            fprintf(f, "%f;",global_exec_times[i + j*ns_length ]);
+            fprintf(f, "%f,",global_exec_times[i + j*ns_length ]);
         }
         fprintf(f,"\n");
 

@@ -12,4 +12,4 @@ Graph is presented here
 Or take this [raw result](docs/output.csv) for you monsters.
 
 ## Usage
-Smply give these script ([compile](compile.sh) and [run](run.sh)) appropriate permission and run them.
+Simply give these script ([compile](compile.sh) and [run](run.sh)) appropriate permission and run them.
