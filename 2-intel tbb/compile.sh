@@ -1,0 +1,1 @@
+g++ src/main.cpp -std=c++11 -g -O2 -ltbb -o bin/a.out
